@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import Header from '../components/Header';
+import { Link } from 'react-router-dom';
 
 const Signup = () => {
   const [name, setName] = useState('');
@@ -89,7 +90,7 @@ const Signup = () => {
 
               <p className="text-center mt-3 text-dark">
                 Already have an account?{' '}
-                <a href="/login" className="text-decoration-none text-primary">Login</a>
+               <Link to="/signup">Sign Up</Link>
               </p>
             </form>
           </div>

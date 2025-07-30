@@ -12,11 +12,11 @@ const ProductCard = ({ product }) => {
   };
 
   return (
-    <div className="card shadow-sm h-100" style={{ minHeight: '420px' }}>
+    <div className="card shadow-sm h-100 w-100" style={{ minHeight: '420px' }}>
       <img 
         src={product.image} 
         alt={product.title} 
-        className="card-img-top p-3" 
+        className="card-img-top p-3 img-fluid" 
         style={{ height: '200px', objectFit: 'contain' }} 
       />
       <div className="card-body d-flex flex-column">

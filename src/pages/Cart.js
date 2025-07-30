@@ -37,7 +37,7 @@ const Cart = () => {
       <Header />
       <div className="container my-4">
         <div className="row">
-          <div className="col-md-8">
+          <div className="col-12 col-md-8 mb-4 mb-md-0">
             <div className="card p-3 mb-3 shadow-sm border-secondary bg-highliter text-light">
               <h5 className="fw-semibold">
                 My Cart ({cartCount} {cartCount === 1 ? 'item' : 'items'})
@@ -62,7 +62,7 @@ const Cart = () => {
 
           {/* Price Details */}
           {cart.length > 0 && (
-            <div className="col-md-4">
+             <div className="col-12 col-md-4">
               <div className="card p-3 sticky-top shadow-sm border-secondary bg-highliter text-light" style={{ top: '20px' }}>
                 <h5 className="mb-3">Price Details</h5>
                 <hr className="bg-secondary" />

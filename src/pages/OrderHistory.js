@@ -27,10 +27,10 @@ const OrderHistory = () => {
           </div>
         ) : (
           orders.map(order => (
-            <div className="card mb-4 shadow-sm border-secondary bg-dark text-light" key={order.id}>
-              <div className="row g-0">
+             <div className="card mb-4 shadow-sm border-secondary bg-dark text-light" key={order.id}>
+              <div className="row g-0 flex-column flex-md-row">
                 {/* Left: Order Summary */}
-                <div className="col-md-8 border-end border-secondary">
+                <div className="col-12 col-md-8 border-end border-secondary">
                   <div className="card-body">
                     <div className="d-flex justify-content-between align-items-center mb-2">
                       <h6 className="mb-0 fw-semibold">Order #{order.id}</h6>
@@ -73,7 +73,7 @@ const OrderHistory = () => {
                   </div>
                 </div>
                 {/* Right: Delivery/User Details */}
-                <div className="col-md-4">
+                 <div className="col-12 col-md-4">
                   <div className="card-body">
                     <div className="mb-2">
                       <strong>User Name:</strong>

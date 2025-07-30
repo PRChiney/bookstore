@@ -5,9 +5,9 @@ const CartItem = ({ item }) => {
   const { updateQuantity, removeFromCart } = useCart();
 
   return (
-    <div className="card mb-3 shadow-sm border-secondary bg-highliter text-light">
-      <div className="row g-0">
-        <div className="col-md-2 d-flex align-items-center justify-content-center p-2">
+     <div className="card mb-3 shadow-sm border-secondary bg-highliter text-light">
+      <div className="row g-0 flex-column flex-md-row">
+        <div className="col-12 col-md-2 d-flex align-items-center justify-content-center p-2">
           <img
             src={item.image}
             alt={item.title}
@@ -15,7 +15,7 @@ const CartItem = ({ item }) => {
             style={{ maxHeight: '120px', objectFit: 'contain' }}
           />
         </div>
-        <div className="col-md-6">
+     <div className="col-12 col-md-6">
           <div className="card-body py-2 bg-highliter text-light">
             <h6 className="card-title fw-semibold mb-1">{item.title}</h6>
             <p className="card-text text-success small mb-1">In Stock</p>
@@ -46,7 +46,7 @@ const CartItem = ({ item }) => {
           </div>
         </div>
         {/* Price Section */}
-        <div className="col-md-4">
+       <div className="col-12 col-md-4">
           <div className="card-body py-2 text-end bg-highliter text-light">
             <h6 className="mb-1 text-info">₹{item.price.toFixed(2)}</h6>
             <p className="text-muted small mb-1">

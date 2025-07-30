@@ -40,12 +40,11 @@ const Signup = () => {
         <div className="row shadow p-4 rounded" style={{ backgroundColor: '#fff' }}>
           {/* Left banner/image section */}
           <div className="col-md-6 d-none d-md-flex align-items-center justify-content-center bg-light rounded-start">
-           <img src={logo} alt="Logo" style={{ height: '200px', marginRight: '10px' }} />
-
+            <img src={logo} alt="Logo" style={{ height: '200px', marginRight: '10px' }} />
           </div>
 
           {/* Right form section */}
-          <div className="col-md-6 px-4 py-3">
+           <div className="col-12 col-md-6 px-4 py-3">
             <h3 className="mb-4 text-primary">Sign Up</h3>
             <form onSubmit={handleSubmit}>
               <div className="mb-3">

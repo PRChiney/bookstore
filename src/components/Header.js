@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useCart } from '../context/CartContext';
+import logo from '../assets/logo.png';
 
 const Header = ({ minimal }) => {
   const { user, logout } = useAuth();
@@ -17,11 +18,7 @@ const Header = ({ minimal }) => {
     <header className="shadow-sm bg-dark mb-3 sticky-top" style={{ zIndex: 1030 }}>
       <nav className="container d-flex justify-content-between align-items-center py-3">
         <Link to="/" className="navbar-brand fw-bold fs-4 text-light text-decoration-none d-flex align-items-center">
-          <img
-            src="/logo.png"
-            alt="Logo"
-            style={{ height: '40px', marginRight: '10px' }}
-          />
+          <img src={logo} alt="Logo" style={{ height: '40px', marginRight: '10px' }} />
           BookStore
         </Link>
 

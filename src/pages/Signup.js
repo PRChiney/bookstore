@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import Header from '../components/Header';
 import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png';
 
 const Signup = () => {
   const [name, setName] = useState('');
@@ -39,12 +40,8 @@ const Signup = () => {
         <div className="row shadow p-4 rounded" style={{ backgroundColor: '#fff' }}>
           {/* Left banner/image section */}
           <div className="col-md-6 d-none d-md-flex align-items-center justify-content-center bg-light rounded-start">
-            <img
-              src="/logo.png"
-              alt="signup banner"
-              className="img-fluid p-3"
-              style={{ maxHeight: '350px' }}
-            />
+           <img src={logo} alt="Logo" style={{ height: '200px', marginRight: '10px' }} />
+
           </div>
 
           {/* Right form section */}
@@ -90,7 +87,7 @@ const Signup = () => {
 
               <p className="text-center mt-3 text-dark">
                 Already have an account?{' '}
-               <Link to="/login">Sign Up</Link>
+               <Link to="/login">Login</Link>
               </p>
             </form>
           </div>
